@@ -1,0 +1,78 @@
+@import "./variables.scss";
+
+.chat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatWindow {
+  width: 70%;
+  height: 70%;
+  border: 1px solid $darkGrey;
+  border-radius: 20px;
+  padding: 1em 2em;
+  background-color: $chatBg;
+}
+
+.sendMessageForm {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    background-color: $defaultColor;
+    width: 14%;
+    height: 40px;
+    outline: none;
+    font-size: 1em;
+    border: none;
+    background-color: $messageName;
+    color: $defaultColor;
+  }
+
+  input {
+    width: 85%;
+    height: 40px;
+    background: none;
+    border: 1px solid $darkGrey;
+    color: $defaultColor;
+    font-size: 1em;
+
+    &:focus {
+      outline: none;
+      background: transparent;
+    }
+  }
+}
+
+.messages {
+  min-height: 90%;
+  max-height: 90%;
+  overflow: scroll;
+}
+
+.message {
+  border: 1px solid $message;
+  background-color: $message;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.messUsername {
+  margin-bottom: 8px;
+  color: $messageName;
+}
+
+.connectionMessage {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+  color: $messageName;
+}
